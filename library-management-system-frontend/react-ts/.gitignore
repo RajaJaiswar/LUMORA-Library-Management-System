@@ -1,0 +1,48 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Environment files
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Editor & System files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Database dumps & backups
+*.sql
+*.sqlite
+*.db
+*.bak
+
+# Unoptimized / Intermediate raw assets
+public/lumora-logo-untrimmed.png
+
+# Internal Documentation & Markdown files (exclude all except root README.md)
+docs/
+*.md
+**/*.md
+!/README.md
+BACKEND.md
+LIBRARYMS_UI_DESIGN_SYSTEM.md
+

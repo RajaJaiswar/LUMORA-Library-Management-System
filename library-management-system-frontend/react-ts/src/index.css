@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@theme {
+  /* Typography Stack */
+  --font-sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-brand: Outfit, var(--font-sans);
+
+  /* Brand & Primary Actions */
+  --color-primary: #2563EB;
+  --color-primary-hover: #1D4ED8;
+  --color-primary-active: #1E40AF;
+  --color-primary-soft: #EFF6FF;
+  --color-primary-border: #BFDBFE;
+
+  /* Surfaces & Canvases */
+  --color-background: #F8FAFC;
+  --color-surface: #FFFFFF;
+  --color-surface-subtle: #F1F5F9;
+
+  /* Typography & Text */
+  --color-text: #0F172A;
+  --color-text-secondary: #475569;
+  --color-text-muted: #64748B;
+
+  /* Borders & Dividers */
+  --color-border: #E2E8F0;
+  --color-border-strong: #CBD5E1;
+
+  /* Semantic Statuses */
+  --color-success: #15803D;
+  --color-success-soft: #F0FDF4;
+  --color-warning: #B45309;
+  --color-warning-soft: #FFFBEB;
+  --color-danger: #B91C1C;
+  --color-danger-soft: #FEF2F2;
+  --color-info: #0369A1;
+  --color-info-soft: #F0F9FF;
+
+  /* Overlays & Backdrops */
+  --color-overlay: rgba(15, 23, 42, 0.48);
+
+  /* Radii */
+  --radius-control: 12px;
+  --radius-button: 12px;
+  --radius-card: 16px;
+  --radius-panel: 24px;
+
+  /* Elevation */
+  --shadow-card: 0 4px 16px rgba(15, 23, 42, 0.04);
+  --shadow-popover: 0 10px 25px -5px rgba(15, 23, 42, 0.08), 0 8px 10px -6px rgba(15, 23, 42, 0.04);
+}
+
+/* Spacing Scale Custom Properties */
+:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+}
+
+/* Base Application Defaults */
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font-sans);
+  background-color: var(--color-background);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Default Text Selection */
+::selection {
+  background-color: var(--color-primary);
+  color: #ffffff;
+}
